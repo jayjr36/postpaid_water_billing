@@ -11,6 +11,8 @@ class WaterMeter extends Model
 
     protected $fillable = [
         'meter_id',
-        'reading'
+        'reading',
+        'bill',
+        'due_amount',
     ];
 }

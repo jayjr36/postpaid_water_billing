@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('meter_id');
             $table->float('reading');
+            $table->string('bill')->default(0);
+            $table->string('due_amount')->default(0);
             $table->timestamps();
         });
     }
